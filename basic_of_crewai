@@ -1,0 +1,60 @@
+# crewai-
+You build a "crew" of agents, give them tools, assign tasks, and let them work together to solve complex problems!
+
+
+# 1. Agents
+-Agents are autonomous entities that can reason, make decisions, and act to achieve goals.
+-In CrewAI, each agent is usually assigned a specific role or expertise (e.g., researcher, writer, coder).
+-Agents use tools and perform tasks, often collaborating with other agents.
+
+Example:
+A "Research Agent" that finds information, or a "Writer Agent" that drafts articles.
+
+-------------------------------------------------------------------------------
+
+# 2. Tools
+-Tools are functions or APIs that agents can use to perform actions they can’t do alone.
+-Examples: web search, calculator, database query, code execution, file upload.
+-Tools are registered with the agent, and the agent decides when and how to use them.
+
+Example:
+A "Search Tool" lets the agent look up facts online.
+
+--------------------------------------------------------------------------------
+
+# 3. Tasks
+-Tasks are specific objectives or jobs assigned to agents.
+-Each task has a description, requirements, and sometimes a completion criteria.
+-Agents use their reasoning and tools to complete tasks.
+
+Example:
+Task: "Find the latest research on AI safety and summarize it in 200 words."
+
+--------------------------------------------------------------------------------
+
+# How it works together
+You define agents, tools, and tasks.
+Agents use tools to complete tasks, often communicating and collaborating with other agents.
+CrewAI orchestrates the workflow, passing tasks to the right agents and managing tool usage.
+
+## ########################################################
+
+## from textwrap import dedent
+
+text = '''
+    This is an indented line.
+    This line is also indented.
+    But relative indentations are kept.
+'''
+
+# Original:
+
+    This is an indented line.
+    This line is also indented.
+    But relative indentations are kept.
+
+
+# Dedented:
+This is an indented line.
+This line is also indented.
+But relative indentations are kept.
